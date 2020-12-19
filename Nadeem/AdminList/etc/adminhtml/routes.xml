@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+    	
+    	<!-- Route Syntax : id = modulename, frontName =  modulename -->
+        <route id="adminlist" frontName="adminlist">
+            <module name="Nadeem_AdminList" before="Magento_Backend" />
+        </route>
+    </router>
+</config>
