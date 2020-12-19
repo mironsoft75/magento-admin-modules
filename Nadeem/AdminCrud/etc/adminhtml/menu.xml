@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+      <!-- Parent -->
+      <add id="Nadeem_AdminCrud::nadeem_admincrud_post"
+      title="Nadeem N" module="Nadeem_AdminCrud"
+      sortOrder="50"
+      resource="Magento_Backend::content"
+      />
+
+      <!-- Menu Action Syntax : action = modulename/controllerfolder -->
+      <add id="Nadeem_AdminCrud::nadeem_admincrud_post_item"
+      title="Admin Crud" module="Nadeem_AdminCrud"
+      sortOrder="10" parent="Nadeem_AdminCrud::nadeem_admincrud_post"
+      action="admincrud/post"
+      resource="Nadeem_AdminCrud::nadeem_admincrud_post_item"
+      />
+   </menu>
+</config>
